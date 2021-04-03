@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5352D0B3-232D-494E-947F-E6E3AC2E2D8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VBos.My.MyApplication</StartupObject>
+    <RootNamespace>VBos</RootNamespace>
+    <AssemblyName>VBos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VBos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VBos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Skybound.Gecko">
+      <HintPath>..\..\..\..\Desktop\Skybound.Gecko.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calc.Designer.vb">
+      <DependentUpon>calc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="disc.Designer.vb">
+      <DependentUpon>disc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="disc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.vb">
+      <DependentUpon>Form10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.vb">
+      <DependentUpon>Form11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.vb">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.vb">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.vb">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.vb">
+      <DependentUpon>Form9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logom.Designer.vb">
+      <DependentUpon>logom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="logom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIchild1.Designer.vb">
+      <DependentUpon>MDIchild1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIchild1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PONE.Designer.vb">
+      <DependentUpon>PONE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PONE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calc.resx">
+      <DependentUpon>calc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="disc.resx">
+      <DependentUpon>disc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logom.resx">
+      <DependentUpon>logom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIchild1.resx">
+      <DependentUpon>MDIchild1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PONE.resx">
+      <DependentUpon>PONE.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Form1.datasource" />
+    <None Include="My Project\DataSources\Form2.datasource" />
+    <None Include="My Project\DataSources\VBos.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\VBos.My.MySettings.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="xulrunner\chrome\classic.manifest" />
+    <None Include="xulrunner\chrome\comm.manifest" />
+    <None Include="xulrunner\chrome\en-US.manifest" />
+    <None Include="xulrunner\chrome\pippki.manifest" />
+    <None Include="xulrunner\chrome\toolkit.manifest" />
+    <None Include="xulrunner\components\components.list" />
+    <None Include="xulrunner\components\xulrunner.xpt" />
+    <None Include="xulrunner\crashreporter.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\defaults\profile\localstore.rdf" />
+    <None Include="xulrunner\defaults\profile\US\localstore.rdf" />
+    <None Include="xulrunner\dependentlibs.list">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\dictionaries\en-US.aff" />
+    <None Include="xulrunner\dictionaries\en-US.dic" />
+    <None Include="xulrunner\freebl3.chk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\modules\CertUtils.jsm" />
+    <None Include="xulrunner\modules\ctypes.jsm" />
+    <None Include="xulrunner\modules\DownloadLastDir.jsm" />
+    <None Include="xulrunner\modules\DownloadUtils.jsm" />
+    <None Include="xulrunner\modules\FileUtils.jsm" />
+    <None Include="xulrunner\modules\ISO8601DateUtils.jsm" />
+    <None Include="xulrunner\modules\LightweightThemeConsumer.jsm" />
+    <None Include="xulrunner\modules\LightweightThemeManager.jsm" />
+    <None Include="xulrunner\modules\NetUtil.jsm" />
+    <None Include="xulrunner\modules\PlacesDBUtils.jsm" />
+    <None Include="xulrunner\modules\PluralForm.jsm" />
+    <None Include="xulrunner\modules\WindowDraggingUtils.jsm" />
+    <None Include="xulrunner\modules\XPCOMUtils.jsm" />
+    <None Include="xulrunner\nspr-config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\nssdbm3.chk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\platform.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\res\charsetalias.properties" />
+    <None Include="xulrunner\res\charsetData.properties" />
+    <None Include="xulrunner\res\dtd\mathml.dtd" />
+    <None Include="xulrunner\res\dtd\xhtml11.dtd" />
+    <None Include="xulrunner\res\entityTables\html40Latin1.properties" />
+    <None Include="xulrunner\res\entityTables\html40Special.properties" />
+    <None Include="xulrunner\res\entityTables\html40Symbols.properties" />
+    <None Include="xulrunner\res\entityTables\htmlEntityVersions.properties" />
+    <None Include="xulrunner\res\entityTables\mathml20.properties" />
+    <None Include="xulrunner\res\entityTables\transliterate.properties" />
+    <None Include="xulrunner\res\fonts\mathfont.properties" />
+    <None Include="xulrunner\res\fonts\mathfontStandardSymbolsL.properties" />
+    <None Include="xulrunner\res\fonts\mathfontSTIXNonUnicode.properties" />
+    <None Include="xulrunner\res\fonts\mathfontSTIXSize1.properties" />
+    <None Include="xulrunner\res\fonts\mathfontSymbol.properties" />
+    <None Include="xulrunner\res\fonts\mathfontUnicode.properties" />
+    <None Include="xulrunner\res\langGroups.properties" />
+    <None Include="xulrunner\res\language.properties" />
+    <None Include="xulrunner\res\wincharset.properties" />
+    <None Include="xulrunner\softokn3.chk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\update.locale">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="xulrunner\AccessibleMarshal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\chrome\classic.jar" />
+    <Content Include="xulrunner\chrome\comm.jar" />
+    <Content Include="xulrunner\chrome\en-US.jar" />
+    <Content Include="xulrunner\chrome\pippki.jar" />
+    <Content Include="xulrunner\chrome\toolkit.jar" />
+    <Content Include="xulrunner\components\FeedProcessor.js" />
+    <Content Include="xulrunner\components\GPSDGeolocationProvider.js" />
+    <Content Include="xulrunner\components\jsconsole-clhandler.js" />
+    <Content Include="xulrunner\components\NetworkGeolocationProvider.js" />
+    <Content Include="xulrunner\components\nsAddonRepository.js" />
+    <Content Include="xulrunner\components\nsBadCertHandler.js" />
+    <Content Include="xulrunner\components\nsBlocklistService.js" />
+    <Content Include="xulrunner\components\nsContentDispatchChooser.js" />
+    <Content Include="xulrunner\components\nsContentPrefService.js" />
+    <Content Include="xulrunner\components\nsDefaultCLH.js" />
+    <Content Include="xulrunner\components\nsDownloadManagerUI.js" />
+    <Content Include="xulrunner\components\nsExtensionManager.js" />
+    <Content Include="xulrunner\components\nsFormAutoComplete.js" />
+    <Content Include="xulrunner\components\nsHandlerService.js" />
+    <Content Include="xulrunner\components\nsHelperAppDlg.js" />
+    <Content Include="xulrunner\components\nsLivemarkService.js" />
+    <Content Include="xulrunner\components\nsLoginInfo.js" />
+    <Content Include="xulrunner\components\nsLoginManager.js" />
+    <Content Include="xulrunner\components\nsLoginManagerPrompter.js" />
+    <Content Include="xulrunner\components\nsPlacesAutoComplete.js" />
+    <Content Include="xulrunner\components\nsPlacesDBFlush.js" />
+    <Content Include="xulrunner\components\nsProgressDialog.js" />
+    <Content Include="xulrunner\components\nsProxyAutoConfig.js" />
+    <Content Include="xulrunner\components\nsSearchService.js" />
+    <Content Include="xulrunner\components\nsSearchSuggestions.js" />
+    <Content Include="xulrunner\components\nsTaggingService.js" />
+    <Content Include="xulrunner\components\nsTryToClose.js" />
+    <Content Include="xulrunner\components\nsUpdateService.js" />
+    <Content Include="xulrunner\components\nsUpdateServiceStub.js" />
+    <Content Include="xulrunner\components\nsUpdateTimerManager.js" />
+    <Content Include="xulrunner\components\nsURLFormatter.js" />
+    <Content Include="xulrunner\components\nsWebHandlerApp.js" />
+    <Content Include="xulrunner\components\nsXULAppInstall.js" />
+    <Content Include="xulrunner\components\pluginGlue.js" />
+    <Content Include="xulrunner\components\storage-Legacy.js" />
+    <Content Include="xulrunner\components\storage-mozStorage.js" />
+    <Content Include="xulrunner\components\txEXSLTRegExFunctions.js" />
+    <Content Include="xulrunner\crashreporter.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\defaults\autoconfig\platform.js" />
+    <Content Include="xulrunner\defaults\autoconfig\prefcalls.js" />
+    <Content Include="xulrunner\defaults\pref\xulrunner.js" />
+    <Content Include="xulrunner\defaults\profile\chrome\userChrome-example.css" />
+    <Content Include="xulrunner\defaults\profile\chrome\userContent-example.css" />
+    <Content Include="xulrunner\defaults\profile\US\chrome\userChrome-example.css" />
+    <Content Include="xulrunner\defaults\profile\US\chrome\userContent-example.css" />
+    <Content Include="xulrunner\freebl3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\greprefs\all.js" />
+    <Content Include="xulrunner\greprefs\security-prefs.js" />
+    <Content Include="xulrunner\greprefs\xpinstall.js" />
+    <Content Include="xulrunner\IA2Marshal.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\javaxpcom.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\javaxpcomglue.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\js.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\js3250.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\modules\debug.js" />
+    <Content Include="xulrunner\modules\Microformats.js" />
+    <Content Include="xulrunner\modules\SpatialNavigation.js" />
+    <Content Include="xulrunner\modules\utils.js" />
+    <Content Include="xulrunner\mozcrt19.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\mozctl.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\mozctlx.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\nspr4.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\nss3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\nssckbi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\nssdbm3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\nssutil3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\plc4.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\plds4.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\plugins\npnul32.dll" />
+    <Content Include="xulrunner\README.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\redit.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\res\arrow.gif" />
+    <Content Include="xulrunner\res\arrowd.gif" />
+    <Content Include="xulrunner\res\broken-image.png" />
+    <Content Include="xulrunner\res\contenteditable.css" />
+    <Content Include="xulrunner\res\designmode.css" />
+    <Content Include="xulrunner\res\EditorOverride.css" />
+    <Content Include="xulrunner\res\forms.css" />
+    <Content Include="xulrunner\res\grabber.gif" />
+    <Content Include="xulrunner\res\hiddenWindow.html" />
+    <Content Include="xulrunner\res\html.css" />
+    <Content Include="xulrunner\res\html\folder.png" />
+    <Content Include="xulrunner\res\loading-image.png" />
+    <Content Include="xulrunner\res\mathml.css" />
+    <Content Include="xulrunner\res\quirk.css" />
+    <Content Include="xulrunner\res\svg.css" />
+    <Content Include="xulrunner\res\table-add-column-after-active.gif" />
+    <Content Include="xulrunner\res\table-add-column-after-hover.gif" />
+    <Content Include="xulrunner\res\table-add-column-after.gif" />
+    <Content Include="xulrunner\res\table-add-column-before-active.gif" />
+    <Content Include="xulrunner\res\table-add-column-before-hover.gif" />
+    <Content Include="xulrunner\res\table-add-column-before.gif" />
+    <Content Include="xulrunner\res\table-add-row-after-active.gif" />
+    <Content Include="xulrunner\res\table-add-row-after-hover.gif" />
+    <Content Include="xulrunner\res\table-add-row-after.gif" />
+    <Content Include="xulrunner\res\table-add-row-before-active.gif" />
+    <Content Include="xulrunner\res\table-add-row-before-hover.gif" />
+    <Content Include="xulrunner\res\table-add-row-before.gif" />
+    <Content Include="xulrunner\res\table-remove-column-active.gif" />
+    <Content Include="xulrunner\res\table-remove-column-hover.gif" />
+    <Content Include="xulrunner\res\table-remove-column.gif" />
+    <Content Include="xulrunner\res\table-remove-row-active.gif" />
+    <Content Include="xulrunner\res\table-remove-row-hover.gif" />
+    <Content Include="xulrunner\res\table-remove-row.gif" />
+    <Content Include="xulrunner\res\ua.css" />
+    <Content Include="xulrunner\res\viewsource.css" />
+    <Content Include="xulrunner\smime3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\softokn3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\sqlite3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\ssl3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\updater.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xpcom.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xpcshell.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xpidl.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xpt_dump.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xpt_link.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xul.dll" />
+    <Content Include="xulrunner\xulrunner-stub.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xulrunner.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSTSCLib">
+      <Guid>{8C11EFA1-92C3-11D1-BC1E-00C04FA31489}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSTSCLib">
+      <Guid>{8C11EFA1-92C3-11D1-BC1E-00C04FA31489}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
