@@ -1,5 +1,5 @@
 # VBos
-One of my old VB projects.
+One of my old VB projects. (now discontinued as i dont plan even doing anything to this anymore)
 # Why does this exist?
 I think it was made to resemble an actual operating system.
 # How do I even look through the forms? it's way too spaghetti.
