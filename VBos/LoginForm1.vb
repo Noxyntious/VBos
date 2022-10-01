@@ -1,15 +1,15 @@
 Public Class LoginForm1
 
-    ' TODO: Vlote kód pro provedení vlastního ovìøení pouitím poskytnutého uivatelského jména a hesla 
+    ' TODO: VloÅ¾te kÃ³d pro provedenÃ­ vlastnÃ­ho ovÃ¬Ã¸enÃ­ pouÅ¾itÃ­m poskytnutÃ©ho uÅ¾ivatelskÃ©ho jmÃ©na a hesla 
     ' (Viz https://go.microsoft.com/fwlink/?LinkId=35339).  
-    ' Vlastní hlavní hodnota mùe bıt dále pøipojena k hlavní hodnotì aktuálního vlákna: 
+    ' VlastnÃ­ hlavnÃ­ hodnota mÃ¹Å¾e bÃ½t dÃ¡le pÃ¸ipojena k hlavnÃ­ hodnotÃ¬ aktuÃ¡lnÃ­ho vlÃ¡kna: 
     '     My.User.CurrentPrincipal = CustomPrincipal
-    ' kde CustomPrincipal je implementace rozhraní IPrincipal pouita k provedení ovìøení. 
-    ' Následnì bude My.User vracet informace o identitì zapouzdøené v objektu CustomPrincipal
-    ' jako je uivatelské jméno, zobrazované jméno, atd.
+    ' kde CustomPrincipal je implementace rozhranÃ­ IPrincipal pouÅ¾ita k provedenÃ­ ovÃ¬Ã¸enÃ­. 
+    ' NÃ¡slednÃ¬ bude My.User vracet informace o identitÃ¬ zapouzdÃ¸enÃ© v objektu CustomPrincipal
+    ' jako je uÅ¾ivatelskÃ© jmÃ©no, zobrazovanÃ© jmÃ©no, atd.
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        If ComboBox1.Text = "Noxyntious" And PasswordTextBox.Text = "speakersxd" Then
+        If ComboBox1.Text = "Noxyntious" And PasswordTextBox.Text = "fart" Then
             Form2.Show()
             Me.Close()
         Else
